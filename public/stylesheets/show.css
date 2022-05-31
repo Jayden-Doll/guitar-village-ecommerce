@@ -1,0 +1,14 @@
+*::-moz-selection {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+*::selection {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.body {
+  margin: 0;
+  font-family: "Overpass Mono", monospace;
+  background-color: white;
+}
+/*# sourceMappingURL=show.css.map */

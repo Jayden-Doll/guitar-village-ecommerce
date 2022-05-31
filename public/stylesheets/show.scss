@@ -1,0 +1,13 @@
+* {
+  &::selection {
+    background-color: rgba($color: #000000, $alpha: 0.2);
+  }
+}
+
+.body {
+  margin: 0;
+
+  font-family: "Overpass Mono", monospace;
+
+  background-color: rgb(255, 255, 255);
+}

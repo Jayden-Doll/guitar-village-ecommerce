@@ -1,0 +1,31 @@
+<%- include ("head") %> 
+  <body class="body">
+    <%- include ("navbar") %>
+      <div class="site-wrapper">
+    <h1><%= brand %> guitars</h1>
+    <p><a href="/">Homepage</a></p>
+
+    <% const guitars = guitarData.filter((guitar) => { return guitar.brand ===
+    `${brand}` }) %> <% guitars.forEach(({name, brand, price, bodysize,
+    description, description2, img, materials: {topwood, sidewood}} = guitar) =>
+    { %>
+
+    <h2><%= name %> $<%= price %></h2>
+
+    <p>
+      <%= brand %> <%= bodysize %> <% if(brand === "Martin") { %>
+      <img src="<%= img  %>" alt="" height="50%" />
+      <% } else { %>
+      <img src="<%= img %>" alt="" width="50%" />
+      <% } %>
+      <small><%= topwood %> - <%= sidewood %></small>
+    </p>
+    <small class="desc"><%= description %></small>
+    <% if(description2) { %>
+    <small class="desc"><%= description2 %></small>
+    <% } %> <% }); %>
+
+    </div>
+    <%- include ("footer") %>
+  </body>
+</html>

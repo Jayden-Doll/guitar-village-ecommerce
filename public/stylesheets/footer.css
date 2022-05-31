@@ -1,0 +1,28 @@
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #333;
+  color: white;
+  gap: 1rem;
+  width: 100%;
+  height: 8rem;
+  margin-top: 2rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.footer small {
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=footer.css.map */

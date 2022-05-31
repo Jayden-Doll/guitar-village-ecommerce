@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <title>Guitar Village: Acoustics For All</title>
+    <link rel="icon" type="image/x-icon" href="/images/guitar_logo_icon.svg" />
+    <script
+      src="https://kit.fontawesome.com/53c8ee4293.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/javascripts/search.js"></script>
+    <link rel="stylesheet" href="/stylesheets/error.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  </head>
+  <body class="body">
+    <h1>sorry, that wasn't supposed to happen!</h1>
+
+    <hr />
+
+    <% if(!error.status) { %>
+    <h2>404 - <%= error %></h2>
+    <% } else { %>
+    <h2><%= %> - <%= %></h2>
+    <% } %>
+    <a href="/">Back to index</a>
+  </body>
+</html>
