@@ -1,8 +1,62 @@
-.search-term {
-  color: black;
+.results-info-container {
+  margin-bottom: 4rem;
 }
 
-.search-fail-text {
+.search-info-text {
   color: #333;
   margin-bottom: 1.5rem;
+}
+
+.search-term {
+  color: black;
+  font-weight: bold;
+}
+
+.sort-container {
+  margin-bottom: 1.5rem;
+}
+
+.search-grid {
+  margin-top: 2rem;
+  gap: 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    height: auto;
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      position: relative;
+
+      .add-to-cart {
+        width: 4rem;
+        height: 3rem;
+      }
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+    .card-bottom {
+      display: flex;
+      text-align: left;
+      flex-direction: column;
+      position: relative;
+      height: 50%;
+      width: 100%;
+      padding-top: 2rem;
+    }
+  }
 }

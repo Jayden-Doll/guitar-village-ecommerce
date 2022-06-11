@@ -1,9 +1,91 @@
-.search-term {
-  color: black;
+.results-info-container {
+  margin-bottom: 4rem;
 }
 
-.search-fail-text {
+.search-info-text {
   color: #333;
   margin-bottom: 1.5rem;
+}
+
+.search-term {
+  color: black;
+  font-weight: bold;
+}
+
+.sort-container {
+  margin-bottom: 1.5rem;
+}
+
+.search-grid {
+  margin-top: 2rem;
+  gap: 10rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.search-grid .product-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  height: auto;
+}
+
+.search-grid .product-card .card-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.search-grid .product-card .card-top .add-to-cart {
+  width: 4rem;
+  height: 3rem;
+}
+
+.search-grid .product-card .card-top img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.search-grid .product-card .card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  height: 50%;
+  width: 100%;
+  padding-top: 2rem;
 }
 /*# sourceMappingURL=search.css.map */

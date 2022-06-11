@@ -30,7 +30,7 @@ const guitarData = [
     img: "https://www.taylorguitars.com/sites/default/files/images/2022-02/Taylor-314ce-00887766089162-FrontLeft-2021.png",
   },
   {
-    searchName: "Taylor 224ce-K DLX",
+    searchName: "Taylor 224ceK DLX",
     name: "224ce-K DLX",
     brand: "Taylor",
     price: "1,800",
@@ -46,7 +46,7 @@ const guitarData = [
     img: "https://www.taylorguitars.com/sites/default/files/2022-02-08/224ceK%20DLX-Front.png",
   },
   {
-    searchName: "Martin D-28",
+    searchName: "Martin D28",
     name: "D-28",
     brand: "Martin",
     price: "3,000",
@@ -62,7 +62,7 @@ const guitarData = [
     img: "https://www.martinguitar.com/dw/image/v2/BGJT_PRD/on/demandware.static/-/Sites-martin-master-catalog/default/dw77e28aa4/images/D-28/D-28_f.jpg?sw=600&sh=600&sm=fit",
   },
   {
-    searchName: "Martin D-X1E",
+    searchName: "Martin DX1E",
     name: "D-X1E",
     brand: "Martin",
     price: "500",
@@ -78,7 +78,7 @@ const guitarData = [
     img: "https://www.martinguitar.com/dw/image/v2/BGJT_PRD/on/demandware.static/-/Sites-martin-master-catalog/default/dwd653b8f4/images/D-X1E/D-X1E_f_mahogany-hpl.jpg?sw=600&sh=600&sm=fit",
   },
   {
-    searchName: "Martin 000-15M",
+    searchName: "Martin 00015M",
     name: "000-15M",
     brand: "Martin",
     price: "500",
@@ -92,7 +92,7 @@ const guitarData = [
     img: "https://www.martinguitar.com/dw/image/v2/BGJT_PRD/on/demandware.static/-/Sites-martin-master-catalog/default/dw0c0f5e76/images/000-15M/000-15M_f.jpg?sw=600&sh=600&sm=fit",
   },
   {
-    searchName: "Gibson J-45 Standard",
+    searchName: "Gibson J45 Standard",
     name: "J-45 Standard",
     brand: "Gibson",
     price: "2,850",

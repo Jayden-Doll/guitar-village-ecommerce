@@ -2,14 +2,57 @@
 <body>
   <%- include ("navbar") %>
   <div class="site-wrapper">
-    <div class="content">
-      <h1>Homepage</h1>
-      <h2>BY BRAND</h2>
-      <p><a href="/brand/Martin">Martin Guitars</a></p>
-      <p><a href="/brand/Taylor">Taylor Guitars</a></p>
-      <p><a href="/brand/Gibson">Gibson Guitars</a></p>
-      <p><a href="/brand/Orangewood">Orangewood Guitars</a></p>
-    </div>
+    <main>
+      <div class="content">
+        <section class="section section-promo">
+          <div class="promo-image__container">
+            <h1 class="heading heading-promo">
+              Don't wait, find your dream guitar today.
+            </h1>
+            <img src="/images/promo-img.webp" alt="man playing guitar" />
+          </div>
+        </section>
+        <section class="section-searchcard">
+          <h2 class="heading">Search by brand</h2>
+          <div class="section searchcard-container grid">
+            <a aria-label="to taylor guitars" href="/search?q=taylor"
+              ><div class="searchcard-image__container">
+                <p class="heading">Taylor Guitars</p>
+                <img src="/images/taylor.webp" alt="" /></div
+            ></a>
+            <a aria-label="to martin guitars" href="/search?q=martin"
+              ><div class="searchcard-image__container">
+                <p class="heading">Martin Guitars</p>
+                <img src="/images/martin.webp" alt="" /></div
+            ></a>
+            <a aria-label="to orangewood guitars" href="/search?q=orangewood"
+              ><div class="searchcard-image__container">
+                <p class="heading">Orangewood Guitars</p>
+                <img src="/images/orangewood.webp" alt="" /></div
+            ></a>
+            <a aria-label="to gibson guitars" href="/search?q=gibson"
+              ><div class="searchcard-image__container">
+                <p class="heading">Gibson Guitars</p>
+                <img src="/images/gibson.webp" alt="" /></div
+            ></a>
+          </div>
+          <h3 class="heading">Heading #3</h3>
+          <div class="section searchcard-container grid">
+            <div class="searchcard-image__container"><img src="" alt="" /></div>
+            <div class="searchcard-image__container"><img src="" alt="" /></div>
+            <div class="searchcard-image__container"><img src="" alt="" /></div>
+            <div class="searchcard-image__container"><img src="" alt="" /></div>
+          </div>
+          <h4 class="heading">Heading #4</h4>
+          <div class="section searchcard-container grid">
+            <div class="searchcard-image__container"><img src="" alt="" /></div>
+            <div class="searchcard-image__container"><img src="" alt="" /></div>
+            <div class="searchcard-image__container"><img src="" alt="" /></div>
+            <div class="searchcard-image__container"><img src="" alt="" /></div>
+          </div>
+        </section>
+      </div>
+    </main>
   </div>
   <%- include ("footer") %>
 </body>

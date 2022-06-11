@@ -1,23 +1,32 @@
 <nav class="nav-desktop">
   <div class="nav-wrapper">
     <div class="nav-content">
-      <a href="/"><img src="/images/gv_logo.svg" alt="" /></a>
-      <form class="search" action="/search" method="post" id="search">
+      <a aria-label="to homepage" href="/"
+        ><img src="/images/gv_logo.svg" alt=""
+      /></a>
+      <form
+        aria-label="search form"
+        class="search"
+        action="/search?search=<%= searchTermTrimmed %>"
+        method="get"
+        id="searchbar"
+      >
         <input
+          aria-label="search bar"
           class="search-bar"
-          name="search"
+          name="q"
           type="text"
           id="search"
           placeholder="Search guitars"
           autocomplete="off"
         />
-        <button class="nav-btn" type="submit">
+        <button aria-label="search" class="nav-btn" type="submit">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </form>
-      <ul class="icons">
+      <div class="icons">
         <i class="fa-solid fa-cart-shopping"></i>
-      </ul>
+      </div>
     </div>
   </div>
 </nav>

@@ -40,11 +40,122 @@ body {
           flex-direction: column;
 }
 
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .site-wrapper {
   padding: 0 5%;
-  padding-top: 6rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+}
+
+.section {
+  margin-bottom: 6rem;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-promo {
+  margin-top: 6rem;
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.section-promo .promo-image__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.section-promo .promo-image__container .heading {
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section-promo .promo-image__container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.section-searchcard {
+  text-align: center;
+}
+
+.section-searchcard .searchcard-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  position: relative;
+}
+
+.section-searchcard .searchcard-container a .searchcard-image__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+  border: 4px solid transparent;
+}
+
+.section-searchcard .searchcard-container a .searchcard-image__container:hover {
+  border: 4px solid black;
+  border-radius: 5px;
+}
+
+.section-searchcard .searchcard-container a .searchcard-image__container .heading {
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  padding: 5px;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section-searchcard .searchcard-container a .searchcard-image__container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 500px;
+  -webkit-transition: border-radius 0.2s ease;
+  transition: border-radius 0.2s ease;
+}
+
+@media only screen and (min-width: 1500px) {
+  .site-wrapper {
+    padding: 0 10%;
+  }
 }
 /*# sourceMappingURL=index.css.map */
