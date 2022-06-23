@@ -5,28 +5,34 @@
   <div class="site-wrapper">
     <form class="sort-container" action="" method="get" id="sort">
       <label for="sort">Sort By:</label>
-      <select name="sort" id="sort" onchange="this.form.submit();">
+      <select onchange="getValue()" name="sort" id="sortList">
         <option value="">No sort selected</option>
         <option value="hightolow">Price: high to low</option>
         <option value="lowtohigh">Price: low to high</option>
         <option value="bestsellers">Best Sellers</option>
       </select>
     </form>
-    <% if(results.length) { %>
 
-    <div id="poop" class="results-info-container">
-      <p class="search-info-text">
+    <script>
+      const getValue = () => {
+        const listValue = document.getElementById("sortList").value;
+        console.log(listValue);
+      };
+    </script>
+
+    <div class="results-info-container">
+      <p class="results-info-text">
         Search results for:
         <span class="search-term">"<%= searchTermTrimmed %>"</span>
       </p>
-      <p class="search-info-text">
+      <p class="results-info-text">
         <span class="search-term"><%= results.length %></span> results found.
       </p>
     </div>
 
-    <div class="search-grid">
-      <% } %> <% if(results.length) { %> <% results.forEach(({searchName, name,
-      brand, bodysize, description1,price, img} = result) => { %>
+    <div class="results-grid">
+      <% if(results.length) { %> <% results.forEach(({searchName, name, brand,
+      bodysize, description1,price, img} = result) => { %>
       <div class="product-card">
         <div class="card-top">
           <img src="<%= img %>" alt="" />
